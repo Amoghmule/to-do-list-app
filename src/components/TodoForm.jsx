@@ -11,9 +11,9 @@ export const TodoForm = ({ addTodo }) => {
         }
     }
   return (
-    <form action="submit" onSubmit={handleSubmit}>
-        <input type="text" placeholder='whats up with you today?' value={value} onChange={(e) => setValue(e.target.value)}/>
-        <button type="submit">Add</button>
+    <form action="submit" onSubmit={handleSubmit}  className="TodoForm">
+        <input className="todo-input" type="text" placeholder='whats up with you today?' value={value} onChange={(e) => setValue(e.target.value)}/>
+        <button className='todo-btn' type="submit">Add</button>
     </form>
   )
 }
